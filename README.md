@@ -21,7 +21,7 @@ cp config.example.json config.json
 
 | Variable | Rôle |
 | --- | --- |
-| `DISCORD_TOKEN` | Token du compte Discord (obligatoire) |
+| `DISCORD_TOKEN` | Token Discord (obligatoire) |
 | `DISCORD_AUTHOR_ID` | ID de l'auteur dont les messages sont supprimés (vide = auto-détection) |
 | `EXCLUDED_GUILDS` | IDs de serveurs exclus, séparés par des virgules |
 | `SCHEDULE_INTERVAL_HOURS` | Intervalle entre deux cycles de nettoyage (heures) |
