@@ -1,0 +1,10 @@
+{
+  "name": "undiscord-vps-auto-cleanup",
+  "version": "2.0.0",
+  "description": "Undiscord message cleanup automatisé pour VPS Ubuntu (API directe, sans navigateur)",
+  "main": "src/standalone.js",
+  "scripts": {
+    "start": "node src/standalone.js"
+  },
+  "dependencies": {}
+}

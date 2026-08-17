@@ -1,0 +1,19 @@
+{
+  "discord": {
+    "token": "TON_TOKEN_DISCORD_ICI",
+    "authorId": null
+  },
+  "excludedGuilds": [],
+  "schedule": {
+    "intervalHours": 12
+  },
+  "cleanup": {
+    "maxAgeDays": 30,
+    "searchDelay": 30000,
+    "deleteDelay": 1200
+  },
+  "webhook": {
+    "url": "",
+    "minLevel": "info"
+  }
+}

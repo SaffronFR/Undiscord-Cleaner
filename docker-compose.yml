@@ -1,0 +1,18 @@
+services:
+  undiscord-cleanup:
+    build: .
+    container_name: undiscord-auto-cleanup
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./logs:/app/logs
+    command: npm start
+    # Pour debug X11 (optionnel)
+    # environment:
+    #   - DISPLAY=host.docker.internal:0
+    # stdin_open: true
+    # tty: true
+

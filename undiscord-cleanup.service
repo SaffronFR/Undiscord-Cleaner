@@ -1,0 +1,18 @@
+[Unit]
+Description=Undiscord Auto-Cleanup Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/scripts/UndiscordAuto-Discord
+ExecStart=/usr/bin/node /home/ubuntu/scripts/UndiscordAuto-Discord/src/standalone.js
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/undiscord-cleanup.log
+StandardError=append:/var/log/undiscord-cleanup.log
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

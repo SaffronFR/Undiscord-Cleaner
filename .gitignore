@@ -1,0 +1,14 @@
+# ==== Secrets (NE JAMAIS COMMITTER) ====
+.env
+config.json
+
+# ==== Dépendances ====
+node_modules/
+
+# ==== Logs ====
+logs/
+
+# ==== Divers OS ====
+.DS_Store
+Thumbs.db
+*.swp
